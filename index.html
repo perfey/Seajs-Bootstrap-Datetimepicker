@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SeaJS Datetimepicker</title>
+<link rel="stylesheet" href="static/lib/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="./css/datetimepicker.css">
+</head>
+<body>
+  <div class="container">
+    <form action="" class="form-horizontal">
+        <fieldset>
+          <legend>Datetimepicker</legend>
+          <div class="control-group">
+            <label class="control-label">DateTime Picking</label>
+            <div class="controls input-append date form_datetime" data-date="yyyy-MM-dd">
+              <input size="16" type="text" value="" readonly>
+              <span class="add-on"><i class="icon-remove"></i></span>
+              <span class="add-on"><i class="icon-calendar"></i></span>
+            </div>
+            <br/>
+          </div>
+        </fieldset>
+    </form>
+</div>
+
+<script type="text/javascript" src="static/seajs/sea.js?t=20130306"></script>
+<script type="text/javascript">
+    seajs.use("./js/config.js?t=" + Date.parse(new Date()), function () {
+        seajs.use("./js/main");
+    })
+</script>
+
+</body>
+</html>
