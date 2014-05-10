@@ -3,5 +3,10 @@ define(function(require) {
 	require('bootstrap-datetimepicker');
 	require('bootstrap-datetimepicker.zh-CN');
 
-	seajs.use("./js/webinit");
+	//seajs.use("./js/webinit");
+	$('.form_datetime').datetimepicker({
+		language:  'zh-CN',
+		minView: 'month',
+		format: 'yyyy-mm-dd'
+	});
 });
